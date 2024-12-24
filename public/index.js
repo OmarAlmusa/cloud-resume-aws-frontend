@@ -48,7 +48,7 @@ function openOverlay(content) {
 function closeOverlay() {
     console.log('Closing overlay');
     overlay.classList.add('hide-content');
-    overlay_content.innerHTML = `<button id="close-btn">X</button>`
+    overlay_content.innerHTML = ``
     base.classList.remove('blur-background');
 
 }
