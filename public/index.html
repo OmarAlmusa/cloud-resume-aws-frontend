@@ -10,11 +10,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
+    
 </head>
 
 <body>
-    <div class="base roboto-regular">
+    <div class="base roboto-regular" id="base">
 
         <div class="profile">
             <div class="profile-picture">
@@ -28,19 +28,26 @@
         </div>
 
         <div class="categories">
-            <button type="button" class="roboto-medium">Experience</button>
-            <button type="button" class="roboto-medium">Skills</button>
-            <button type="button" class="roboto-medium">Projects</button>
+            <button id="experience-btn" class="roboto-medium">Experience</button>
+            <button id="skills-btn" class="roboto-medium">Skills</button>
+            <button id="projects-btn" class="roboto-medium">Projects</button>
         </div>
+        
 
         <div class="contact">
             <p>Contact information</p>
-            <p>Page views</p>
+            <p class="view-count" id="view-count">Page views</p>
             <p>Copyright reserve</p>
         </div>
         
     </div>
 
-</body>
+    <div id="overlay" class="hide-content">
+        <div id="overlay-content">
+            
+        </div>
+    </div>
 
+    <script src="./index.js"></script>
+</body>
 </html>
